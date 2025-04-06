@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "react-scripts start",
+  "build": "react-scripts build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:101274382_comp3133_assignment2": "node dist/101274382_comp3133_assignment2/server/server.mjs"

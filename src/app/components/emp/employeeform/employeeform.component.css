@@ -1,0 +1,51 @@
+.form-container {
+    padding: 10px;
+    max-width: 700px;
+    border-radius: 20px;
+}
+
+.full-width {
+    width: 40%;
+    margin: 4px;
+    
+}
+
+.main-content {
+    max-height: 50vh;
+    overflow-y: auto;
+    margin-top: 0.5em;
+
+}
+
+.custom-datepicker {
+    z-index: 1000;
+    /* Ensure it’s above the dialog */
+    position: absolute;
+}
+
+.firstName {
+    margin-top: 1.5em;
+}
+
+.button-container {
+    padding-top: 10px;
+
+}
+.image-preview {
+    margin-top: 10px;
+}
+
+.image-preview img {
+    border-radius: 5px;
+    max-height: 100px;
+    max-width: 100px;
+    object-fit: cover;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,55 @@
+.profile-container {
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-card {
+    margin-bottom: 70px;
+  }
+  
+  .mat-card {
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .card-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .employee-photo {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details {
+    flex: 1;
+    min-width: 10px;
+  }
+  
+  .details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .details p {
+    margin: 4px 0;
+  }
+  
+  .back-button {
+    display: block;
+    margin: 30px auto 0;
+  }
+  

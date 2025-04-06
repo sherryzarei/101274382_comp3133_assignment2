@@ -1,0 +1,82 @@
+.login-background {
+    background: #1976d2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 420px;
+    width: 100%;
+  }
+  
+  .auth-card {
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .auth-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .shadow {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+  }
+  
+  .full-width {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .error-message {
+    color: #ff5252;
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .footer {
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  .footer a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 5px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  

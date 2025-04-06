@@ -1,0 +1,22 @@
+<div class="profile-container" *ngIf="employee">
+    <h2>Employee Profile</h2>
+    <mat-card class="employee-card mat-elevation-z4">
+      <div class="card-content">
+        <img [src]="employee.employee_photo" alt="Employee Photo" class="employee-photo" />
+        <div class="empDetails">
+          <h3>{{ employee.first_name }} {{ employee.last_name }}</h3>
+          <p><strong>Email:</strong> {{ employee.email }}</p>
+          <p><strong>Gender:</strong> {{ employee.gender }}</p>
+          <p><strong>Designation:</strong> {{ employee.designation }}</p>
+          <p><strong>Department:</strong> {{ employee.department }}</p>
+          <p><strong>Salary:</strong> {{ employee.salary | currency }}</p>
+          <p><strong>Date of Joining:</strong> {{ employee.date_of_joining | date }}</p>
+        </div>
+      </div>
+    </mat-card>
+  
+    <button mat-raised-button color="primary" routerLink="/employees" class="back-button">
+      Back to Employees
+    </button>
+  </div>
+  

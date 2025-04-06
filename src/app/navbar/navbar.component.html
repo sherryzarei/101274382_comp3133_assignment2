@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" class="navbar">
+    <a mat-button routerLink="/" class="nav-link">🏠 Home</a>
+    <a mat-button routerLink="/employees" class="nav-link">📊 Dashboard</a>
+  
+    <span class="spacer"></span>
+  
+    <ng-container *ngIf="!isLoggedIn">
+      <a mat-stroked-button color="accent" routerLink="/login" class="buttons login-btn">Login</a>
+      <a mat-raised-button color="accent" routerLink="/signup" class="buttons signup-btn">Sign Up</a>
+    </ng-container>
+  
+    <ng-container *ngIf="isLoggedIn">
+      <button mat-stroked-button color="warn" (click)="logout()" class="buttons logout-btn color: white">
+        Logout
+      </button>
+    </ng-container>
+  </mat-toolbar>
+  

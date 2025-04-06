@@ -1,0 +1,20 @@
+<div class="home-container">
+  <div class="left-panel">
+    <img src="../../assets/hr-illustration.svg" alt="HR Illustration" class="hero-img" />
+  </div>
+
+  <div class="right-panel"> 
+    <div class="content-box">
+      <h1 class="title">Welcome to <span class="highlight">HR Management</span></h1>
+      <p class="subtitle">Streamline your employee operations with ease.</p>
+
+      <div *ngIf="!isLoggedIn">
+        <app-login></app-login>
+      </div>
+
+      <div *ngIf="isLoggedIn">
+        <a mat-button routerLink="/employees">Go to Dashboard</a>
+      </div>
+    </div>
+  </div>
+</div>
